@@ -1,0 +1,2 @@
+# estadistica
+operaciones estadísticas
