@@ -12,7 +12,7 @@ const lista1 = [
     400,
     500,
     800,
-    1200,
+    1200
 ];
 
 // Primero que nada, debemos saber si nuestra lista es par
@@ -21,9 +21,7 @@ const lista1 = [
 // o impar.
 
 function esPar (n) {
-    if (n === 0) {
-        return "El número es 0";
-    } if (n%2 === 0){
+    if (n%2 === 0){
         return true;
     } else {
         return false;
@@ -47,16 +45,16 @@ if (esPar(lista1.length)) {
 // Creamos otra forma de "calcular la mediana".
 // Nuestra "lista" debe ser un array con números.
 
-function calcularMedianaOrdenada(lista) {
+function calcularMediana1(lista1) {
     
     let mediana;
-    const mitadLista = parseInt(lista.length / 2);
-    if (esPar(lista.length)) {
-        const e1 = lista[mitadLista - 1];
-        const e2 = lista[mitadLista];
+    const mitadLista1 = parseInt(lista1.length / 2);
+    if (esPar(lista1.length)) {
+        const e1 = lista1[mitadLista1 - 1];
+        const e2 = lista1[mitadLista1];
         mediana = (e1 + e2) / 2;
     } else {
-        mediana = lista[mitadLista];
+        mediana = lista1[mitadLista1];
     }
     return mediana;
 };
@@ -70,7 +68,7 @@ function calcularMedianaOrdenada(lista) {
 //     return a - b;
 // });
 
-// Y ahora, vamos a cambiar nuestra función calcularMediana()
+// Y ahora, vamos a crear nuestra función calcularMediana()
 // para que ordene los elementos de la lista antes de que nos
 // retorne una solución, y evitar así problemas de desorden de 
 // elementos.
