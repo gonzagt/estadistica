@@ -9,3 +9,6 @@ En estos archivos, vamos a calcular en la consola del navegador la mediana de li
 
 ## Moda
 En estos archivos, vamos a calcular en la consola del navegador la moda de listas creadas por el usuario, con JS.
+
+## Cambio de usuario
+Probando el nuevo username.
